@@ -3,7 +3,7 @@ import { getGifs } from "../../src/helpers/getGifs";
 describe('Testing getGifs()', () => {
 
     test('Should return an array of gifs', async () => {
-        const gifs = await getGifs('One Punch');
+        const gifs = await getGifs('Fernando Alonso');
 
         expect(gifs.length).toBeGreaterThan(0);
         expect(gifs[0]).toEqual({

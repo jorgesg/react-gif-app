@@ -7,13 +7,13 @@ describe('Testing <AddCategory />', () => {
         render(<AddCategory onNewCategory={() => {}}/>);
         
         const input = screen.getByRole('textbox');
-        fireEvent.input(input, {target: {value: 'Saitama'}});
+        fireEvent.input(input, {target: {value: 'Leo Messi'}});
 
-        expect(input.value).toBe('Saitama');
+        expect(input.value).toBe('Leo Messi');
     });
 
     test('Should trigger OnNewCategory if input has value', () => {
-        const inputValue = 'Saitama';
+        const inputValue = 'Leo Messi';
         const onNewCategory = jest.fn();
         render(<AddCategory onNewCategory={onNewCategory}/>);
 
